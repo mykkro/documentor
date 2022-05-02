@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     print("Starting Documentor...")
 
-    cmdr = Commandr()
+    cmdr = Commandr("documentor")
     cmdr.add_argument("infile", "-i", type="str", required=True, loadconfig=True)
     cmdr.build()
     args, configs = cmdr.parse()
